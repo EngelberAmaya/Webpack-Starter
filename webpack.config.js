@@ -15,7 +15,15 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.css$/,
+                /*exclude: /styles\.css$/,*/
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
 
         ]
     },
